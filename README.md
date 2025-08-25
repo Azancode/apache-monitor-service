@@ -11,19 +11,21 @@ If Apache stops running, the service will automatically restart it to ensure upt
 
 ## Installation
 1. Clone the repository:
-   ```bash
+   #bash
    git clone https://github.com/YOUR-USERNAME/apache-monitor-service.git
    cd apache-monitor-service
 2. Make the script executable:
-   '''bash
+   #bash
    chmod +x monitor.sh
 3. Copy the service file:
    sudo cp monitor.service /etc/systemd/system/
 4. Reload systemd and enable service:
    sudo systemctl daemon-reload
+5. Enable monitor service:
    sudo systemctl enable monitor.service
+6. 
    sudo systemctl start monitor.service
-
-5. Check Status:
+   
+7. Check Status:
    sudo systemctl status monitor.service
 
